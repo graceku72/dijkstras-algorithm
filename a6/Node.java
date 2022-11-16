@@ -1,5 +1,7 @@
 package a6;
 
+import java.util.ArrayList;
+
 public interface Node {
 
      /* You will include the method signatures (return type, name, and arg types) for any node methods you
@@ -10,6 +12,16 @@ public interface Node {
     previous homeworks (e.g., BST.java and BSTImpl.java in homework 3) are good examples of
     interfaces and their implementations.
      */
+
+     ArrayList<Edge> getEdges();
+     boolean checkEdge(String nodeName);
+     boolean deleteEdge(String nodeName);
+     void addEdge(Edge newEdge);
+     int getInDegree();
+     int increaseInDegree();
+     int decreaseInDegree();
+     double getDistance();
+     void setDistance(double dv);
 
      /**
       * @return the name of the node
